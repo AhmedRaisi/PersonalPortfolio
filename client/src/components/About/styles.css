@@ -29,17 +29,67 @@ body {
 }
 
 /* About section styles */
-
 .about {
     padding: 50px 0;
     background-color: #e9ecef;
-    text-align: center;
+    text-align: left; /* Change to left for better readability */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the about section */
 }
 
 .about h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #333; /* Add a border under the title for better separation */
+    padding-bottom: 10px; /* Add padding to give space between title and border */
 }
+
+.about p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improve line height for better readability */
+    color: #555;
+}
+
+/* ... [Rest of the styles] ... */
+
+.social-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.btn-linkedin {
+    background-color: #0077B5;
+    color: white;
+    border: 1px solid #0077B5;
+}
+
+.btn-github {
+    background-color: #333;
+    color: white;
+    border: 1px solid #333;
+}
+
+.btn-linkedin:hover, .btn-github:hover {
+    background-color: transparent;
+    transform: scale(1.05);
+    color: #333;
+}
+
+
 
 /* Projects section styles */
 

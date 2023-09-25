@@ -1,0 +1,43 @@
+.projectCard {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projectCard h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.projectButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.aboutBtn, .demoBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.aboutBtn {
+    background-color: #007BFF;
+    color: white;
+}
+
+.demoBtn {
+    background-color: #28A745;
+    color: white;
+}
+
+.aboutBtn:hover, .demoBtn:hover {
+    opacity: 0.9;
+}
