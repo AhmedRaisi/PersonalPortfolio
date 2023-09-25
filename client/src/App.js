@@ -11,13 +11,13 @@ function App() {
   return (
     <div className="App">
       <Header />
-
+    <div className="main-content">
       <Home />
       <About />
       <Projects />
       <Contact />
       {/* ... More sections as needed */}
-
+    </div>
       <Footer />
     </div>
   );

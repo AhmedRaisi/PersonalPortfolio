@@ -1,31 +1,44 @@
 .header {
-    background-color: #282c34;
-    padding: 20px 0;
-    text-align: center;
-    color: white;
-  }
-  
-  .navbar {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .navbar li {
-    display: inline;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
-  .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #282c34;
+  padding: 10px 20px;  /* Reduced padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px; /* Reduced font size, adjust to your liking */
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 12px;   /* Slightly reduced padding */
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-size: 16px;     /* Adjust font size if needed */
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+  padding-top: 60px; /* Increased padding to compensate for header size. Adjust as needed. */
+}
