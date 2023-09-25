@@ -41,17 +41,87 @@ body {
     margin-bottom: 20px;
 }
 
+/* ... previous styles ... */
+
 /* Projects section styles */
 
 .projects {
     padding: 50px 0;
     background-color: #fff;
     text-align: center;
+    display: flex;                /* Flexbox properties */
+    flex-wrap: wrap;              /* Allows items to wrap onto the next line */
+    justify-content: space-between;
+    gap: 2%;                      /* Gap between the projects for breathing space */
 }
 
 .projects h1 {
     font-size: 2em;
     margin-bottom: 20px;
+    width: 100%;                 /* Make sure the header takes the full width */
+}
+
+.project {
+    flex: 0 0 48%;               /* Each project takes up almost half the container's width */
+    background-color: #f4f4f4;   /* Background color for each project */
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;         /* Margin only at the bottom to ensure vertical space between rows */
+}
+
+.project h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* ... rest of the styles ... */
+
+/* Individual Project Card styles */
+
+.projectCard {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projectCard h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.projectButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.aboutBtn, .demoBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.aboutBtn {
+    background-color: #007BFF;
+    color: white;
+}
+
+.demoBtn {
+    background-color: #28A745;
+    color: white;
+}
+
+.aboutBtn:hover, .demoBtn:hover {
+    opacity: 0.9;
 }
 
 /* Contact section styles */
