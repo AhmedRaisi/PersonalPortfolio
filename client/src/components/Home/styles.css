@@ -17,16 +17,33 @@ body {
 
 /* Home section styles */
 
+/* Home section styling for elegance and vibrancy */
+
+/* Updated styles for Home section with gradient and custom font */
+
 .home {
-    padding: 50px 0;
-    background-color: #fff;
+    padding: 80px 0;
+    background: linear-gradient(to right, #1e3c72, #2a5298, #6b3a91, #9c278c); /* Gradient background */
     text-align: center;
+    color: #ffffff; /* White text */
+    font-family: 'Poppins', sans-serif; /* Using the Poppins font */
 }
 
 .home h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
 }
+
+.home p {
+    font-size: 1.4em;
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* For added vibrancy, consider adding a gradient background or an elegant font from Google Fonts or similar */
 
 /* About section styles */
 

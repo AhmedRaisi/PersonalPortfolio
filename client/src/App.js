@@ -12,30 +12,6 @@ function App() {
     <div className="App">
       <Header />
 
-      <nav>
-        <ul>
-          <li>
-            <ScrollLink
-              to="homeSection"
-              smooth={true}
-              duration={500}
-            >
-              Home
-            </ScrollLink>
-          </li>
-          <li>
-            <ScrollLink
-              to="aboutSection"
-              smooth={true}
-              duration={500}
-            >
-              About
-            </ScrollLink>
-          </li>
-          {/* ... More links for Projects, Contact, etc. */}
-        </ul>
-      </nav>
-
       <Home />
       <About />
       <Projects />

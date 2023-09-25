@@ -6,5 +6,9 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    position: fixed;  /* Fixes the footer in place */
+    bottom: 0;        /* Aligns the footer to the bottom of the viewport */
+    width: 100%;      /* Makes sure the footer stretches across the entire viewport width */
+    z-index: 1000;    /* Ensures the footer appears on top of other content */
   }
   
