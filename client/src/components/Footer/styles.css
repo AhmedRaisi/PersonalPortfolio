@@ -1,14 +1,9 @@
-.footer {
-    background-color: #282c34;
-    padding: 10px 0;
-    text-align: center;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    position: fixed;  /* Fixes the footer in place */
-    bottom: 0;        /* Aligns the footer to the bottom of the viewport */
-    width: 100%;      /* Makes sure the footer stretches across the entire viewport width */
-    z-index: 1000;    /* Ensures the footer appears on top of other content */
-  }
-  
+footer {
+  height: 80px; /* Define a fixed height for your footer */
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 80px; /* This will vertically center any text in the footer */
+  position: relative; /* Or you can omit this property if you don't need it */
+}
