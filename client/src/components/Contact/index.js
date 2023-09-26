@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Element } from 'react-scroll';
 import './styles.css';
 
 const Contact = () => {
@@ -23,6 +24,7 @@ const Contact = () => {
     };
 
     return (
+      <Element name="contactSection">
         <div className="contact">
             <h1>Contact Me</h1>
             <form onSubmit={handleSubmit}>
@@ -41,6 +43,7 @@ const Contact = () => {
                 <button type="submit">Send</button>
             </form>
         </div>
+        </Element>
     );
 };
 
