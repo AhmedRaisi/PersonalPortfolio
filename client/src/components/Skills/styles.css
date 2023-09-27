@@ -1,18 +1,39 @@
+/* ... Your previous styles ... */
+
 .skills-container {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background: linear-gradient(to right, #1e3c72, #2a5298, #6b3a91, #9c278c); /* Gradient background */
-    color: #ffffff; /* White text */
-    font-family: 'Poppins', sans-serif; /* Using the Poppins font */
+    flex-direction: column; /* Changed back to column to stack items vertically */
+    align-items: center;  /* To center items horizontally */
+    padding: 60px 2%; 
+    background: linear-gradient(to right, #1e3c72, #2a5298, #6b3a91, #9c278c);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
 }
+
+.skills-title {
+    font-size: 2.5em;  
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    text-align: center;
+}
+
+.skills-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Take full width of its parent container */
+}
+
+/* ... Rest of your styles ... */
+
 
 .skill-section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white background to blend with the gradient */
-    width: 30%;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 32%;  /* Adjusted width to be slightly less than a third */
+    margin: 0 1%; /* Set fixed margin on the left and right */
 }
 
 .skill-section h2 {

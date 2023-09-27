@@ -78,4 +78,13 @@ body {
     border: 2px solid #f4f4f4;
     max-width: 80%;
     margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.aboutCard h1 {
+    margin-bottom: 40px; /* This is the new line to add space below the title */
+}
+
+.social-buttons {
+    margin-top: 40px; /* This adds margin above the social buttons */
 }

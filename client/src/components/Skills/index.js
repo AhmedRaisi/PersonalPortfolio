@@ -9,14 +9,18 @@ const Skills = () => {
 
     return (
         <Element name="skillsSection">
-        <div className="skills-container">
-            <SkillSection title="Front-end" skills={frontEndSkills} />
-            <SkillSection title="Back-end" skills={backEndSkills} />
-            <SkillSection title="Machine Learning & Data Analytics" skills={mlDataAnalyticsSkills} />
-        </div>
+            <div className="skills-container">
+                <div className="skills-title">My Skills</div>
+                <div className="skills-wrapper">
+                    <SkillSection title="Front-end" skills={frontEndSkills} />
+                    <SkillSection title="Back-end" skills={backEndSkills} />
+                    <SkillSection title="Machine Learning & Data Analytics" skills={mlDataAnalyticsSkills} />
+                </div>
+            </div>
         </Element>
     );
 }
+
 
 const SkillSection = ({ title, skills }) => {
     return (
