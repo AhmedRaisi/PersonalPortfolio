@@ -1,0 +1,34 @@
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: linear-gradient(to right, #1e3c72, #2a5298, #6b3a91, #9c278c); /* Gradient background */
+    color: #ffffff; /* White text */
+    font-family: 'Poppins', sans-serif; /* Using the Poppins font */
+}
+
+.skill-section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white background to blend with the gradient */
+    width: 30%;
+}
+
+.skill-section h2 {
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Lighter border-bottom to be visible on gradient */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.skill-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-section li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500; /* Making it slightly bolder for better visibility */
+}

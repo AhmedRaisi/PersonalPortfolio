@@ -3,16 +3,23 @@
   top: 0;
   width: 100%;
   background-color: #282c34;
-  padding: 10px 20px;  /* Reduced padding */
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
 }
 
-h1 {
+.logo {
   margin: 0;
-  font-size: 24px; /* Reduced font size, adjust to your liking */
+  font-size: 40px; /* Increased font size for emphasis */
+  font-weight: bold; /* Bold font for presence */
+  color: #e0e0e0; /* Slightly off-white color for sophistication */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.highlight {
+  color: #FF5733; /* Highlight the second 'A' with a distinct color for artistic touch */
 }
 
 .navbar {
@@ -29,10 +36,10 @@ h1 {
 .navbar a {
   text-decoration: none;
   color: white;
-  padding: 6px 12px;   /* Slightly reduced padding */
+  padding: 6px 12px;
   border-radius: 4px;
   transition: background-color 0.3s;
-  font-size: 16px;     /* Adjust font size if needed */
+  font-size: 16px;
 }
 
 .navbar a:hover {
@@ -40,5 +47,5 @@ h1 {
 }
 
 .main-content {
-  padding-top: 60px; /* Increased padding to compensate for header size. Adjust as needed. */
+  padding-top: 60px;
 }

@@ -5,7 +5,7 @@ import './styles.css';
 const Header = () => {
   return (
     <header className="header">
-      <h1>AAR</h1>
+      <h1 className="logo">A<span className="highlight">A</span>R</h1> {/* Used className 'logo' */}
       <nav>
         <ul className="navbar">
           <li>
@@ -26,6 +26,16 @@ const Header = () => {
               offset={-60}  // Added offset
             >
               About
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              to="skillsSection"
+              smooth={true}
+              duration={500}
+              offset={-60}  // Adjust offset as needed
+            >
+              Skills
             </ScrollLink>
           </li>
           <li>

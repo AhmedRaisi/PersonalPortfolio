@@ -5,7 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import { Link as ScrollLink } from 'react-scroll';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
     <div className="main-content">
       <Home />
       <About />
+      <Skills />
       <Projects />
       <Contact />
       {/* ... More sections as needed */}
