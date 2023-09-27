@@ -5,7 +5,7 @@ import './styles.css';
 const Header = () => {
   return (
     <header className="header">
-      <h1>My Portfolio</h1>
+      <h1>AAR</h1>
       <nav>
         <ul className="navbar">
           <li>
@@ -13,6 +13,7 @@ const Header = () => {
               to="homeSection"
               smooth={true}
               duration={500}
+              offset={-60}  // Added offset
             >
               Home
             </ScrollLink>
@@ -22,6 +23,7 @@ const Header = () => {
               to="aboutSection"
               smooth={true}
               duration={500}
+              offset={-60}  // Added offset
             >
               About
             </ScrollLink>
@@ -31,6 +33,7 @@ const Header = () => {
               to="projectsSection"
               smooth={true}
               duration={500}
+              offset={-80}  // Added offset
             >
               Projects
             </ScrollLink>
@@ -40,6 +43,7 @@ const Header = () => {
               to="contactSection"
               smooth={true}
               duration={500}
+              offset={-60}  // Added offset
             >
               Contact
             </ScrollLink>
@@ -50,5 +54,6 @@ const Header = () => {
     </header>
   );
 }
+
 
 export default Header;

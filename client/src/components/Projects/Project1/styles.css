@@ -41,3 +41,9 @@
 .aboutBtn:hover, .demoBtn:hover {
     opacity: 0.9;
 }
+
+.projectDescription {
+    margin: 10px 0;
+    color: #555;
+  }
+  
