@@ -1,17 +1,24 @@
+/* Updated Contact section styles */
+
 .contact {
-    padding: 50px 0;
-    background-color: #fff;
+    padding: 80px 0;  /* Increased padding for more vertical space */
+    background: linear-gradient(to right, #1e3c72, #2a5298, #6b3a91, #9c278c);  /* Gradient background */
     text-align: center;
+    color: #f4f4f4;  /* Light text color for visibility against dark background */
 }
 
 .contact h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em;  /* Increased font size */
+    margin-bottom: 30px;
 }
 
 .contact form {
     max-width: 600px;
     margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);  /* Border to set the form apart */
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);  /* Slightly visible background to highlight the form area */
 }
 
 .inputGroup {
@@ -27,21 +34,23 @@
 .inputGroup textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.6);  /* Adjusted border for better visibility */
     border-radius: 5px;
-    resize: vertical;
+    background: rgba(255, 255, 255, 0.08);  /* Input background to stand out */
+    color: #f4f4f4;  /* Light text color for input fields */
 }
 
 button {
     background-color: #007BFF;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 25px;  /* Increased padding for a bigger button */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
