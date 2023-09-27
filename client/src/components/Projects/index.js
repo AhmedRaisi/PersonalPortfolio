@@ -10,33 +10,38 @@ const Projects = () => {
   const projectData = [
     {
       id: 1,
-      title: "Project 1",
+      title: "MLStockPredictors",
+      description: "A machine learning model trained to predict future stock market prices based on historical data.",
       aboutLink: "#",
       demoLink: "#",
       component: Project1
     },
     {
       id: 2,
-      title: "Project 2",
+      title: "Tarsho",
+      description: "An e-commerce platform for boutique designers to showcase and sell their unique products.",
       aboutLink: "#",
       demoLink: "#",
       component: Project2
     },
     {
       id: 3,
-      title: "Project 3",
+      title: "DroneSim",
+      description: "A realistic drone simulation application, providing users the experience of piloting various drone models.",
       aboutLink: "#",
       demoLink: "#",
       component: Project3
     },
     {
       id: 4,
-      title: "Project 4",
+      title: "2048AIOptimization",
+      description: "An AI-driven model optimized to play and win the game 2048.",
       aboutLink: "#",
       demoLink: "#",
       component: Project4
     },
   ];
+  
 
   return (
     <Element name="projectsSection">

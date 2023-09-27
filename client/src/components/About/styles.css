@@ -15,21 +15,6 @@ body {
     overflow: hidden;
 }
 
-/* Home section styles */
-
-.home {
-    padding: 50px 0;
-    background-color: #fff;
-    text-align: center;
-}
-
-.home h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* About section styles */
-
 .about {
     padding: 50px 0;
     background-color: #fff; /* Keeping it consistent with home */
@@ -88,28 +73,3 @@ body {
     color: #333;
 }
 
-/* Projects section styles */
-
-.projects {
-    padding: 50px 0;
-    background-color: #fff;
-    text-align: center;
-}
-
-.projects h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Contact section styles */
-
-.contact {
-    padding: 50px 0;
-    background-color: #fff; /* Same background as home */
-    text-align: center;
-}
-
-.contact h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
