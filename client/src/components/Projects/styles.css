@@ -1,4 +1,9 @@
 /* Common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -15,77 +20,48 @@ body {
     overflow: hidden;
 }
 
-/* Home section styles */
+/* Common button styles */
 
-.home {
-    padding: 50px 0;
-    background-color: #fff;
-    text-align: center;
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
 }
-
-.home h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* About section styles */
-
-.about {
-    padding: 50px 0;
-    background-color: #e9ecef;
-    text-align: center;
-}
-
-.about h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* ... previous styles ... */
 
 /* Projects section styles */
 
-.projects {
+.projectsContainer {
     padding: 50px 0;
-    background-color: #fff;
+    background: linear-gradient(to right, #1e3c72, #2a5298, #6b3a91, #9c278c); /* Gradient background */
     text-align: center;
-    display: flex;                /* Flexbox properties */
-    flex-wrap: wrap;              /* Allows items to wrap onto the next line */
-    justify-content: space-between;
-    gap: 2%;                      /* Gap between the projects for breathing space */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+    color: #333; /* Regular text color for other text within the container, if any */
 }
 
-.projects h1 {
+.projectsContainer h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    width: 100%;                 /* Make sure the header takes the full width */
+    width: 100%;
+    grid-column: span 2;
 }
-
-.project {
-    flex: 0 0 48%;               /* Each project takes up almost half the container's width */
-    background-color: #f4f4f4;   /* Background color for each project */
-    border: 1px solid #e0e0e0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;         /* Margin only at the bottom to ensure vertical space between rows */
-}
-
-.project h3 {
-    font-size: 2em;
-    margin-bottom: 15px;
-}
-
-/* ... rest of the styles ... */
-
 /* Individual Project Card styles */
 
 .projectCard {
-    border: 1px solid #e0e0e0;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border: 1px solid rgba(30, 60, 114, 0.5); /* A softer border color */
     padding: 20px;
-    margin: 20px 0;
+    width: 100%;
+    height: 300px;
     border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(30, 60, 114, 0.2); /* A soft shadow that matches the color scheme */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .projectCard h3 {
@@ -94,45 +70,26 @@ body {
 }
 
 .projectButtons {
+    width: 100%; /* Take the full width of the card */
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the buttons horizontally */
     align-items: center;
     gap: 10px;
 }
 
 .aboutBtn, .demoBtn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
-    transition: background-color 0.3s;
-}
-
-.aboutBtn {
     background-color: #007BFF;
     color: white;
+    border: 1px solid #007BFF;
 }
 
 .demoBtn {
     background-color: #28A745;
-    color: white;
+    border: 1px solid #28A745;
 }
 
 .aboutBtn:hover, .demoBtn:hover {
-    opacity: 0.9;
-}
-
-/* Contact section styles */
-
-.contact {
-    padding: 50px 0;
-    background-color: #e9ecef;
-    text-align: center;
-}
-
-.contact h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    background-color: transparent;
+    transform: scale(1.05);
+    color: #333;
 }
