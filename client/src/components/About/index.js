@@ -1,32 +1,37 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './styles.css';
 import { Element } from 'react-scroll';
 
 const About = () => {
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    if (aboutRef.current) {
+      aboutRef.current.classList.add('fadeIn');
+    }
+  }, []);
+
   return (
     <Element name="aboutSection">
-      <div className="about">
-        <div className="aboutCard">  {/* Enclosed the about content inside a card */}
-          <h1>About</h1>
+      <div className="about" ref={aboutRef}>
+        <div className="aboutCard">
+          <h1>About Me</h1>
           <p>
-            Hello, I'm Ahmed. As a passionate Computer Science enthusiast, my journey has been anchored in the realms of machine learning, coupled with a formidable foundation in IT support. Over the years, my penchant for resolving complex problems, analyzing intricate data sets, and handling technical glitches has only grown.
+            Hi, I'm Ahmed. I'm a Computer Science enthusiast with a deep passion for machine learning. My professional journey is rooted in robust IT support, where I've tackled complex problems, managed diverse technical resources, and elevated user experiences.
           </p>
           <p>
-            Currently, on the lookout for exciting software engineering avenues, my professional chronicle is decorated with experiences in IT operations and customer-centric services. I've championed the cause of enhancing operational efficiencies, managing a vast spectrum of hardware and software resources, and most importantly, uplifting the end-user experience. Being an integral part of dynamic teams, I've played pivotal roles in orchestrating seamless IT infrastructures on a grand scale.
+            While I take pride in my past endeavors, I'm currently eager to venture into software engineering roles. I've always thrived in dynamic teams, delivering seamless IT solutions at scale.
           </p>
           <p>
-            My ambition is clear: to leverage my machine learning prowess in tangible applications, particularly as a machine learning engineer. My toolkit is well-equipped with software expertise ranging from TeamDynamix and Active Directory to MATLAB and Git. On the programming front, I'm adept in an array of languages and technologies, including but not limited to Java, Python, C++, JavaScript, Node.js, and MySQL.
+            As I transition, my goal is clear: to apply my machine learning expertise in practical, impactful scenarios. My technical proficiency spans tools like TeamDynamix, Active Directory, MATLAB, and Git, complemented by coding skills in languages such as Java, Python, C++, and JavaScript.
+          </p>
+          <p>
+            I'm actively seeking a full-time opportunity where I can bring my skills to the forefront and further my professional growth.
           </p>
           <div className="social-buttons">
-            <a href="https://www.linkedin.com/in/ahmedalraisi7/" target="_blank" rel="noopener noreferrer" className="btn btn-linkedin">
-              LinkedIn
-            </a>
-            <a href="https://github.com/AhmedRaisi" target="_blank" rel="noopener noreferrer" className="btn btn-github">
-              GitHub
-            </a>
-            <a href="/path-to-your-resume.pdf" download className="btn btn-resume">
-              Resume
-            </a>
+            <a href="https://www.linkedin.com/in/ahmedalraisi7/" target="_blank" rel="noopener noreferrer" className="btn btn-linkedin">LinkedIn</a>
+            <a href="https://github.com/AhmedRaisi" target="_blank" rel="noopener noreferrer" className="btn btn-github">GitHub</a>
+            <a href="/path-to-your-resume.pdf" download className="btn btn-resume">Resume</a>
           </div>
         </div>
       </div>

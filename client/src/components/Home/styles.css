@@ -15,11 +15,17 @@ body {
     overflow: hidden;
 }
 
+/* Fade-in keyframe animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* Home section styles */
-
-/* Home section styling for elegance and vibrancy */
-
-/* Updated styles for Home section with gradient and custom font */
 
 .home {
     padding: 80px 0;
@@ -27,6 +33,7 @@ body {
     text-align: center;
     color: #ffffff; /* White text */
     font-family: 'Poppins', sans-serif; /* Using the Poppins font */
+    animation: fadeIn 2s ease-in-out; /* Apply the fade-in effect over 2 seconds */
 }
 
 .home h1 {
@@ -42,4 +49,3 @@ body {
     font-weight: 300;
     letter-spacing: 1px;
 }
-

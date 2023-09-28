@@ -4,48 +4,46 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.5px;  /* Add subtle letter spacing for better legibility */
+    letter-spacing: 0.5px; 
 }
 
 body {
-    line-height: 1.8;  /* Increased line-height for better readability */
+    line-height: 1.8;
     color: #f4f4f4;
     background: linear-gradient(to right, #1e3c72, #2a5298, #6b3a91, #9c278c);
-    font-family: 'Poppins', sans-serif;
 }
 
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
-    padding: 20px 0;  /* Added vertical padding for breathing space */
+    padding: 20px 0;  
 }
 
-/* Common button styles */
-/* Button Base Style */
+/* Common Button Styles */
 .btn {
     padding: 15px 25px;
-    margin: 0 10px; /* Add space between buttons */
+    margin: 0 10px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s;
     display: inline-block;
-    color: white;  /* Common white color for text */
+    color: white;  
 }
 
 .btn:hover {
     transform: scale(1.05);
-    background-color: white; /* Background color turns to white on hover */
-    color: #007BFF; /* Default text color for hover */
+    background-color: white;
+    color: #007BFF; 
 }
 
+/* Button Variants */
 .aboutBtn, .demoBtn, .btn-linkedin, .btn-github, .btn-resume {
     background-color: #007BFF;
     border: 1px solid #007BFF;
 }
 
-/* Specific button distinctions */
 .demoBtn, .btn-github {
     background-color: #28A745;
     border: 1px solid #28A745;
@@ -56,30 +54,54 @@ body {
     border: 1px solid #9c278c;
 }
 
-/* Hover Styles */
+/* Hover Styles for Buttons */
 .demoBtn:hover, .btn-github:hover {
-    color: #28A745; /* Text color for hover */
+    color: #28A745;
 }
 
 .btn-resume:hover {
-    color: #9c278c; /* Text color for hover */
+    color: #9c278c;
 }
 
-
-/* Home & About section styles */
+/* About Section */
 .home, .about {
-    padding: 100px 0;  /* Increased padding for more vertical space */
+    padding: 100px 0; 
     text-align: center;
     color: #ffffff;
 }
 
-/* About Card Style */
 .aboutCard {
     padding: 40px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);  /* Slight white background to differentiate from the main bg */
-    color: #f4f4f4;  /* Text color */
-    border: 2px solid #f4f4f4;  /* White border */
-    max-width: 80%;  /* Maximum width of the card */
-    margin: 0 auto;  /* Center the card horizontally */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f4f4f4;
+    border: none; 
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.aboutCard h1 {
+    margin-bottom: 40px;
+}
+
+.social-buttons {
+    margin-top: 40px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeInUp 3s forwards;
+  opacity: 0; 
 }
