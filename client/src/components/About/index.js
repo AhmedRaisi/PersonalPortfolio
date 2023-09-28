@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './styles.css';
 import { Element } from 'react-scroll';
 
 const About = () => {
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    if (aboutRef.current) {
+      aboutRef.current.classList.add('fadeIn');
+    }
+  }, []);
+
   return (
     <Element name="aboutSection">
-      <div className="about">
+      <div className="about" ref={aboutRef}>
         <div className="aboutCard">
           <h1>About Me</h1>
           <p>

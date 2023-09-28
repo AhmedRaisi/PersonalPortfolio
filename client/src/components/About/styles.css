@@ -75,16 +75,33 @@ body {
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.1);
     color: #f4f4f4;
-    border: 2px solid #f4f4f4;
+    border: none; 
     max-width: 80%;
     margin: 0 auto;
     margin-bottom: 20px;
 }
 
 .aboutCard h1 {
-    margin-bottom: 40px; /* This is the new line to add space below the title */
+    margin-bottom: 40px;
 }
 
 .social-buttons {
-    margin-top: 40px; /* This adds margin above the social buttons */
+    margin-top: 40px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeInUp 3s forwards;
+  opacity: 0; 
 }

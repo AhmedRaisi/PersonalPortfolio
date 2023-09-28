@@ -1,10 +1,25 @@
+/* Reset & Common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px; 
+}
+
+body {
+    line-height: 1.8;
+    color: #f4f4f4;
+    background: linear-gradient(to right, #1e3c72, #2a5298, #6b3a91, #9c278c);
+}
+
 /* ... Your previous styles ... */
 
 .skills-container {
     display: flex;
-    flex-direction: column; /* Changed back to column to stack items vertically */
-    align-items: center;  /* To center items horizontally */
-    padding: 60px 2%; 
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 2%;
     background: linear-gradient(to right, #1e3c72, #2a5298, #6b3a91, #9c278c);
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
@@ -21,7 +36,7 @@
 .skills-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 100%; /* Take full width of its parent container */
+    width: 100%;
 }
 
 /* ... Rest of your styles ... */
@@ -52,4 +67,20 @@
     margin-bottom: 8px;
     font-size: 16px;
     font-weight: 500; /* Making it slightly bolder for better visibility */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skills-container.fadeIn {
+    animation: fadeInUp 2s forwards;
+    opacity: 0;
 }

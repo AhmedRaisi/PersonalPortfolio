@@ -3,8 +3,8 @@ import './styles.css';
 import { Element } from 'react-scroll';
 
 const Skills = () => {
-    const frontEndSkills = ["HTML", "CSS", "JavaScript", "React", "Vue.js"];
-    const backEndSkills = ["Node.js", "Express.js", "Django", "Ruby on Rails"];
+    const frontEndSkills = ["HTML", "CSS", "JavaScript", "React", "Angular"];
+    const backEndSkills = ["Node.js", "Express.js", "Django", "MySQL", "MongoDB"];
     const mlDataAnalyticsSkills = ["TensorFlow", "PyTorch", "Pandas", "SciKit-Learn"];
 
     return (
