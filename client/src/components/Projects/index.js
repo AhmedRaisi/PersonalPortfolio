@@ -15,7 +15,7 @@ const Projects = () => {
             description: "A machine learning model trained to predict future stock market prices based on historical data.",
             techStack: ["Python", "TensorFlow", "Keras", "Pandas", "Numpy"],
             features: ["Time series forecasting", "Deep learning", "Interactive visualization"],
-            demoLink: "#",
+            demoLink: "https://github.com/AhmedRaisi/MLStockPredictor",
             component: Project1
         },
         {
@@ -24,7 +24,7 @@ const Projects = () => {
             description: "An e-commerce platform for boutique designers to showcase and sell their unique products.",
             techStack: ["React", "Node.js", "MongoDB", "Express.js", "Redux"],
             features: ["User authentication", "Shopping cart", "Product search & filters"],
-            demoLink: "#",
+            demoLink: "https://github.com/AhmedRaisi/Tarsho",
             component: Project2
         },
         {
@@ -33,7 +33,7 @@ const Projects = () => {
           description: "A realistic drone simulation application, providing users the experience of piloting various drone models.",
           techStack: ["React", "Node.js", "MongoDB", "Express.js", "Redux"],
           features: ["User authentication", "Shopping cart", "Product search & filters"],
-          demoLink: "#",
+          demoLink: "https://github.com/AhmedRaisi/DroneSim",
           component: Project3
         },
         {
@@ -42,7 +42,7 @@ const Projects = () => {
           description: "An AI-driven model optimized to play and win the game 2048.",
           techStack: ["React", "Node.js", "MongoDB", "Express.js", "Redux"],
           features: ["User authentication", "Shopping cart", "Product search & filters"],
-          demoLink: "#",
+          demoLink: "https://github.com/AhmedRaisi/2048AIOptimization",
           component: Project4
         },
     ];

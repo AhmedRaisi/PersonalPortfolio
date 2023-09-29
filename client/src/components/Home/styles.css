@@ -37,11 +37,26 @@ body {
 }
 
 .home h1 {
-    font-size: 2.5em;
+    font-size: 3em;          /* Increased the font size */
     margin-bottom: 15px;
-    font-weight: 600;
+    font-weight: 700;        /* Made the font-weight bolder */
     letter-spacing: 1.2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);  /* Added a text-shadow */
+    animation: popIn 0.5s ease-out;  /* New animation */
 }
+
+/* New keyframe animation */
+@keyframes popIn {
+    from {
+        transform: scale(0.9);  /* Start slightly smaller */
+        opacity: 0.5;           /* Start slightly transparent */
+    }
+    to {
+        transform: scale(1);    /* Scale to normal size */
+        opacity: 1;             /* Fully opaque */
+    }
+}
+
 
 .home p {
     font-size: 1.4em;
