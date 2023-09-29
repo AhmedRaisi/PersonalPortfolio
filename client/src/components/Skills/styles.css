@@ -63,10 +63,27 @@ body {
     padding: 0;
 }
 
+.skill-logo {
+    width: 80px; /* Increased width */
+    height: 80px; /* Increased height */
+    margin: 15px; /* Adjusted margin */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for hover effects */
+}
+
+.skill-logo:hover {
+    transform: scale(1.1); /* Slightly increase the size of the logo on hover */
+    opacity: 0.8; /* Slightly reduce the opacity on hover for a subtle effect */
+}
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
 .skill-section li {
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: 500; /* Making it slightly bolder for better visibility */
+    display: flex;
+    align-items: center; /* Vertically center the logo and text */
 }
 
 @keyframes fadeInUp {
