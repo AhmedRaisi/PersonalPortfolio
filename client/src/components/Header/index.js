@@ -5,7 +5,15 @@ import './styles.css';
 const Header = () => {
   return (
     <header className="header">
-      <h1 className="logo">A<span className="highlight">A</span>R</h1> {/* Used className 'logo' */}
+      {/* Wrapped the logo with ScrollLink */}
+      <ScrollLink
+        to="homeSection"
+        smooth={true}
+        duration={500}
+        offset={-60}
+      >
+        <h1 className="logo">A<span className="highlight">A</span>R</h1>
+      </ScrollLink>
       <nav>
         <ul className="navbar">
           <li>
