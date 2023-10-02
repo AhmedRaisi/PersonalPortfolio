@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="footer">
-      <p>&copy; {currentYear} My Portfolio. All rights reserved.</p>
+      <p>&copy; {currentYear} Ahmed Al Raisi's Portfolio. All rights reserved.</p>
     </footer>
   );
 }

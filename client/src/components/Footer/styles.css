@@ -1,9 +1,11 @@
 footer {
-  height: 80px; /* Define a fixed height for your footer */
+  height: 80px; 
   width: 100%;
-  background-color: #333;
-  color: #fff;
+  background: linear-gradient(to right, #1e3c72, #2a5298, #6b3a91, #9c278c); /* Same gradient background as the home section */
+  color: #ffffff; /* White text to stand out on the gradient background */
   text-align: center;
-  line-height: 80px; /* This will vertically center any text in the footer */
-  position: relative; /* Or you can omit this property if you don't need it */
+  line-height: 80px;
+  position: relative;
+  font-family: 'Poppins', sans-serif; /* Using the Poppins font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better readability */
 }
