@@ -2,24 +2,26 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #282c34;
+  background: linear-gradient(to right, rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9), rgba(107, 58, 145, 0.9), rgba(156, 39, 140, 0.9));
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Adds a drop shadow for depth */
 }
+
 
 .logo {
   margin: 0;
-  font-size: 40px; /* Increased font size for emphasis */
-  font-weight: bold; /* Bold font for presence */
-  color: #e0e0e0; /* Slightly off-white color for sophistication */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .highlight {
-  color: #FF5733; /* Highlight the second 'A' with a distinct color for artistic touch */
+  color: #FF5733;
 }
 
 .navbar {
@@ -36,16 +38,19 @@
 .navbar a {
   text-decoration: none;
   color: white;
-  padding: 6px 12px;
+  padding: 10px 12px; /* Adjust the vertical padding to match the header's height */
   border-radius: 4px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s; /* Added transform for a smoother transition effect */
   font-size: 16px;
+  display: flex; /* Ensures that content is vertically centered */
+  align-items: center;
+  height: 100%; /* Makes the link height same as its parent container */
 }
 
 .navbar a:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05); /* Optional: Slightly scale the item for a hovering effect */
 }
-
 .main-content {
   padding-top: 60px;
 }
