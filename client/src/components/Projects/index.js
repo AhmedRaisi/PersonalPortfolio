@@ -16,6 +16,7 @@ const Projects = () => {
             techStack: ["Python", "TensorFlow", "Keras", "Pandas", "Numpy"],
             features: ["Time series forecasting", "Deep learning", "Interactive visualization"],
             demoLink: "https://github.com/AhmedRaisi/MLStockPredictor",
+            githubLink: "https://github.com/AhmedRaisi/MLStockPredictor", 
             component: Project1
         },
         {
@@ -25,6 +26,7 @@ const Projects = () => {
             techStack: ["React", "Node.js", "MongoDB", "Express.js", "Redux"],
             features: ["User authentication", "Shopping cart", "Product search & filters"],
             demoLink: "https://github.com/AhmedRaisi/Tarsho",
+            githubLink: "https://github.com/AhmedRaisi/Tarsho", 
             component: Project2
         },
         {
@@ -34,6 +36,7 @@ const Projects = () => {
           techStack: ["React", "Node.js", "MongoDB", "Express.js", "Redux"],
           features: ["User authentication", "Shopping cart", "Product search & filters"],
           demoLink: "https://github.com/AhmedRaisi/DroneSim",
+          githubLink: "https://github.com/AhmedRaisi/DroneSim", 
           component: Project3
         },
         {
@@ -43,6 +46,7 @@ const Projects = () => {
           techStack: ["React", "Node.js", "MongoDB", "Express.js", "Redux"],
           features: ["User authentication", "Shopping cart", "Product search & filters"],
           demoLink: "https://github.com/AhmedRaisi/2048AIOptimization",
+          githubLink: "https://github.com/AhmedRaisi/2048AIOptimization", 
           component: Project4
         },
     ];
