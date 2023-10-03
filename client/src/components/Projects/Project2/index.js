@@ -1,5 +1,6 @@
-import React, { useState } from 'react'; // Import useState
+import React, { useState } from 'react';
 import './styles.css';
+import githubLogo from './../../../assets/github.png';
 
 const Project = ({ data }) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -15,7 +16,12 @@ const Project = ({ data }) => {
 
           <div className="projectButtons">
               <button onClick={toggleModal} className="aboutBtn">About</button>
-              <a href={data.demoLink} className="demoBtn">Live Demo</a>
+              <div className="right">
+                  <a href={data.githubLink} className="githubBtn">
+                      <img src={githubLogo} alt="GitHub" />
+                  </a>
+                  <a href={data.demoLink} className="demoBtn">Live Demo</a>
+              </div>
           </div>
 
           {modalOpen && (
@@ -27,14 +33,14 @@ const Project = ({ data }) => {
                       <h4>Tech Stack:</h4>
                       <ul>
                           {data.techStack.map((tech, index) => (
-                              <li key={index}>{tech}</li>
+                              <li key={index}>• {tech}</li>
                           ))}
                       </ul>
 
                       <h4>Key Features:</h4>
                       <ul>
                           {data.features.map((feature, index) => (
-                              <li key={index}>{feature}</li>
+                              <li key={index}>• {feature}</li>
                           ))}
                       </ul>
 
@@ -46,6 +52,5 @@ const Project = ({ data }) => {
       </div>
   );
 };
-
 
 export default Project;

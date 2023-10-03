@@ -2,15 +2,17 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(to right, rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9), rgba(107, 58, 145, 0.9), rgba(156, 39, 140, 0.9));
+  background: linear-gradient(to right, rgba(30, 60, 114, 0.95), rgba(42, 82, 152, 0.95), rgba(107, 58, 145, 0.95), rgba(156, 39, 140, 0.95));
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Adds a drop shadow for depth */
 }
 
+.header.scrolled {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* This drop shadow will now appear when scrolled */
+}
 
 .logo {
   margin: 0;
@@ -38,19 +40,20 @@
 .navbar a {
   text-decoration: none;
   color: white;
-  padding: 10px 12px; /* Adjust the vertical padding to match the header's height */
+  padding: 10px 12px;
   border-radius: 4px;
-  transition: background-color 0.3s, transform 0.3s; /* Added transform for a smoother transition effect */
+  transition: background-color 0.3s, transform 0.3s;
   font-size: 16px;
-  display: flex; /* Ensures that content is vertically centered */
+  display: flex;
   align-items: center;
-  height: 100%; /* Makes the link height same as its parent container */
+  height: 100%;
 }
 
 .navbar a:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  transform: scale(1.05); /* Optional: Slightly scale the item for a hovering effect */
+  transform: scale(1.05);
 }
+
 .main-content {
   padding-top: 60px;
 }

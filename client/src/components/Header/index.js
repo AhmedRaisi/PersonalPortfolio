@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import './styles.css';
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', onScroll);
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
+
   return (
-    <header className="header">
-      {/* Wrapped the logo with ScrollLink */}
+    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <ScrollLink
         to="homeSection"
         smooth={true}
@@ -21,7 +38,7 @@ const Header = () => {
               to="homeSection"
               smooth={true}
               duration={500}
-              offset={-60}  // Added offset
+              offset={-60}
             >
               Home
             </ScrollLink>
@@ -31,7 +48,7 @@ const Header = () => {
               to="aboutSection"
               smooth={true}
               duration={500}
-              offset={-60}  // Added offset
+              offset={-60}
             >
               About
             </ScrollLink>
@@ -41,7 +58,7 @@ const Header = () => {
               to="skillsSection"
               smooth={true}
               duration={500}
-              offset={-60}  // Adjust offset as needed
+              offset={-60}
             >
               Skills
             </ScrollLink>
@@ -51,7 +68,7 @@ const Header = () => {
               to="projectsSection"
               smooth={true}
               duration={500}
-              offset={-80}  // Added offset
+              offset={-40}
             >
               Projects
             </ScrollLink>
@@ -61,17 +78,15 @@ const Header = () => {
               to="contactSection"
               smooth={true}
               duration={500}
-              offset={-60}  // Added offset
+              offset={-60}
             >
               Contact
             </ScrollLink>
           </li>
-          {/* ... Add more links as needed */}
         </ul>
       </nav>
     </header>
   );
 }
-
 
 export default Header;
