@@ -24,25 +24,28 @@ const Contact = () => {
     };
 
     return (
-      <Element name="contactSection">
-        <div className="contact">
-            <h1>Contact Me</h1>
-            <form onSubmit={handleSubmit}>
-                <div className="inputGroup">
-                    <label>Name</label>
-                    <input type="text" name="name" value={formData.name} onChange={handleInputChange} required />
+        <Element name="contactSection">
+            <div className="contactContainer">
+                <h1>Contact Me</h1>
+                <div className="contactCard">
+                    <p>Want to collaborate on a project? Have an idea you want to build? Looking to hire me? Get in touch below:</p>
+                    <form onSubmit={handleSubmit}>
+                        <div className="inputGroup">
+                            <label>Name</label>
+                            <input type="text" name="name" value={formData.name} onChange={handleInputChange} required />
+                        </div>
+                        <div className="inputGroup">
+                            <label>Email</label>
+                            <input type="email" name="email" value={formData.email} onChange={handleInputChange} required />
+                        </div>
+                        <div className="inputGroup">
+                            <label>Message</label>
+                            <textarea name="message" value={formData.message} onChange={handleInputChange} required></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
                 </div>
-                <div className="inputGroup">
-                    <label>Email</label>
-                    <input type="email" name="email" value={formData.email} onChange={handleInputChange} required />
-                </div>
-                <div className="inputGroup">
-                    <label>Message</label>
-                    <textarea name="message" value={formData.message} onChange={handleInputChange} required></textarea>
-                </div>
-                <button type="submit">Send</button>
-            </form>
-        </div>
+            </div>
         </Element>
     );
 };

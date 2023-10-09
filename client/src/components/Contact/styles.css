@@ -1,56 +1,72 @@
-/* Updated Contact section styles */
-
-.contact {
-    padding: 80px 0;  /* Increased padding for more vertical space */
-    background: linear-gradient(to right, #1e3c72, #2a5298, #6b3a91, #9c278c);  /* Gradient background */
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    background: linear-gradient(to right, #1e3c72, #2a5298, #6b3a91, #9c278c);
+    color: #f4f4f4;
     text-align: center;
-    color: #f4f4f4;  /* Light text color for visibility against dark background */
 }
 
-.contact h1 {
-    font-size: 2.5em;  /* Increased font size */
+.contactContainer h1 {
+    font-size: 2.8em;
     margin-bottom: 30px;
 }
 
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    border: 1px solid rgba(255, 255, 255, 0.2);  /* Border to set the form apart */
-    padding: 20px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.05);  /* Slightly visible background to highlight the form area */
+.contactCard {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px 60px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 90%;
+}
+
+.contactCard p {
+    font-size: 1.15em;
+    margin-bottom: 25px;
+    color: #EDEDED;  /* A slightly brighter shade to stand out */
 }
 
 .inputGroup {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .inputGroup label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 1.1em;
 }
 
 .inputGroup input,
 .inputGroup textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.6);  /* Adjusted border for better visibility */
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.08);  /* Input background to stand out */
-    color: #f4f4f4;  /* Light text color for input fields */
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #f4f4f4;
+    font-size: 1.05em;
+}
+
+.inputGroup textarea {
+    min-height: 150px;
 }
 
 button {
-    background-color: #007BFF;
+    background-color: #6b3a91;
     color: #fff;
-    padding: 15px 25px;  /* Increased padding for a bigger button */
+    padding: 17px 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    margin-top: 25px;
+    font-size: 1.1em;
 }
 
 button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+    background-color: #9c278c;
+    transform: scale(1.07);
 }
