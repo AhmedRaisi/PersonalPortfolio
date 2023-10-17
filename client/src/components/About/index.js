@@ -23,7 +23,7 @@ const About = () => {
             While I take pride in my past endeavors, I'm currently eager to venture into software engineering roles. I've always thrived in dynamic teams, delivering seamless IT solutions at scale.
           </p>
           <p>
-            As I transition, my goal is clear: to apply my machine learning expertise in practical, impactful scenarios. My technical proficiency spans tools like TeamDynamix, Active Directory, MATLAB, and Git, complemented by coding skills in languages such as Java, Python, C++, and JavaScript.
+          In my transition to a software engineering role, I am poised to apply my machine learning expertise for tangible results. With a solid foundation in tools like Git and languages such as Java, Python, C++, and JavaScript, I persistently seek advancements in emerging technologies, ensuring my capabilities remain cutting-edge.
           </p>
           <p>
             I'm actively seeking a full-time opportunity where I can bring my skills to the forefront and further my professional growth.
