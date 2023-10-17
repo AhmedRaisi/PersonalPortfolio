@@ -63,37 +63,47 @@ body {
     color: #9c278c;
 }
 
-/* About Section */
+/* Improved About Section */
 .home, .about {
-    padding: 100px 0; 
+    padding: 120px 0; 
     text-align: center;
     color: #ffffff;
 }
 
 .aboutCard {
-    padding: 40px;
-    border-radius: 5px;
+    padding: 60px;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     color: #f4f4f4;
-    border: none; 
-    max-width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    max-width: 75%;
     margin: 0 auto;
     margin-bottom: 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .aboutCard h1 {
-    margin-bottom: 40px;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.aboutCard p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.7;
+    text-align: left;
 }
 
 .social-buttons {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
-/* Fade-in Animation */
+/* Improved Fade-in Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -102,6 +112,6 @@ body {
 }
 
 .fadeIn {
-  animation: fadeInUp 3s forwards;
+  animation: fadeInUp 2s forwards;
   opacity: 0; 
 }
