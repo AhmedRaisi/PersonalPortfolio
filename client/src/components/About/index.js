@@ -31,7 +31,7 @@ const About = () => {
           <div className="social-buttons">
             <a href="https://www.linkedin.com/in/ahmedalraisi7/" target="_blank" rel="noopener noreferrer" className="btn btn-linkedin">LinkedIn</a>
             <a href="https://github.com/AhmedRaisi" target="_blank" rel="noopener noreferrer" className="btn btn-github">GitHub</a>
-            <a href="./../assets/Ahmed_Al _Raisi_Resume.pdf" download className="btn btn-resume">Resume</a>
+            <a href={`${process.env.PUBLIC_URL}/Ahmed_Al _Raisi_Resume.pdf`} download className="btn btn-resume">Resume</a>
           </div>
         </div>
       </div>

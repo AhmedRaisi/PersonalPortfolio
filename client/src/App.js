@@ -6,6 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
+import UserProfile from './components/UserProfile';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       {/* ... More sections as needed */}
     </div>
       <Footer />
+      <UserProfile />
     </div>
   );
 }

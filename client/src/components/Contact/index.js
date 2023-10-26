@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';  // Import Axios for HTTP requests
 import { Element } from 'react-scroll';
 import './styles.css';
 
@@ -9,6 +10,8 @@ const Contact = () => {
         message: ""
     });
 
+    const [submissionStatus, setSubmissionStatus] = useState(null);
+
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({
@@ -17,10 +20,26 @@ const Contact = () => {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const mailtoLink = `mailto:ahmedalraisi@gmail.com?subject=Contact from ${formData.name}&body=${formData.message} from ${formData.email}`;
-        window.location.href = mailtoLink;
+
+        // Prepare the data for sending
+        const dataToSend = {
+            name: formData.name,
+            email: formData.email,
+            body: formData.message // This is where the change was made
+        };
+
+        try {
+            const response = await axios.post('/api/contact', dataToSend);
+            if (response.data.message === 'Email sent!') {
+                setSubmissionStatus('success');
+            } else {
+                setSubmissionStatus('error');
+            }
+        } catch (error) {
+            setSubmissionStatus('error');
+        }
     };
 
     return (
@@ -44,6 +63,9 @@ const Contact = () => {
                         </div>
                         <button type="submit">Send</button>
                     </form>
+
+                    {submissionStatus === 'success' && <p>Email sent successfully!</p>}
+                    {submissionStatus === 'error' && <p>Error sending email. Please try again later.</p>}
                 </div>
             </div>
         </Element>
