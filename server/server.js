@@ -55,11 +55,12 @@ app.post('/api/contact', async (req, res) => {
     });
 
     let mailOptions = {
-        from: email, 
-        to: 'ahmedalraisi@gmail.com', 
-        subject: `New Contact Message from ${name}`, 
-        text: body
+        from: email,
+        to: 'ahmedalraisi@gmail.com',
+        subject: `New Contact Message from ${name}`,
+        text: `From: ${email}\n\nMessage:\n${body}`
     };
+    
 
     try {
         await transporter.sendMail(mailOptions);
