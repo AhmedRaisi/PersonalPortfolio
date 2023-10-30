@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import axios from 'axios';  // Import Axios for HTTP requests
+import axios from 'axios';
 import { Element } from 'react-scroll';
 import './styles.css';
+import Modal from './Modal';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -10,7 +11,9 @@ const Contact = () => {
         message: ""
     });
 
-    const [submissionStatus, setSubmissionStatus] = useState(null);
+    const [showModal, setShowModal] = useState(false);
+    const [modalMessage, setModalMessage] = useState('');
+    const [modalStatus, setModalStatus] = useState('success');  // success or failure
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -23,22 +26,27 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Prepare the data for sending
         const dataToSend = {
             name: formData.name,
             email: formData.email,
-            body: formData.message // This is where the change was made
+            body: formData.message
         };
 
         try {
             const response = await axios.post('/api/contact', dataToSend);
             if (response.data.message === 'Email sent!') {
-                setSubmissionStatus('success');
+                setModalMessage('Email sent successfully!');
+                setModalStatus('success');
+                setShowModal(true);
             } else {
-                setSubmissionStatus('error');
+                setModalMessage('Error sending email. Please try again later.');
+                setModalStatus('failure');
+                setShowModal(true);
             }
         } catch (error) {
-            setSubmissionStatus('error');
+            setModalMessage('Error sending email. Please try again later.');
+            setModalStatus('failure');
+            setShowModal(true);
         }
     };
 
@@ -63,11 +71,13 @@ const Contact = () => {
                         </div>
                         <button type="submit">Send</button>
                     </form>
-
-                    {submissionStatus === 'success' && <p>Email sent successfully!</p>}
-                    {submissionStatus === 'error' && <p>Error sending email. Please try again later.</p>}
                 </div>
             </div>
+
+            {/* Modal to display feedback messages */}
+            <Modal show={showModal} onClose={() => setShowModal(false)} isError={modalMessage.includes('Error')}>
+            <p>{modalMessage}</p>
+            </Modal>
         </Element>
     );
 };
