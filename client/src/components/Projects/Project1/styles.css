@@ -17,11 +17,9 @@
     align-items: center;
 }
 
-/* ... (other styles remain unchanged) ... */
-
 .left, .right {
     display: flex;
-    align-items: center; /* align vertically */
+    align-items: center;
     gap: 10px;
 }
 
@@ -41,8 +39,8 @@
     background-color: transparent;
     padding: 0;
     display: flex;
-    align-items: center; /* Ensure alignment of the logo within the button */
-    margin-top: 10px;  /* Slight adjustment downwards to align with the Live Demo button */
+    align-items: center;
+    margin-top: 10px;
 }
 
 .githubBtn:hover {
@@ -53,9 +51,6 @@
     width: 40px;
     height: auto;
 }
-
-/* ... (remaining styles are unchanged) ... */
-
 
 .aboutBtn {
     background-color: #007BFF;
@@ -73,7 +68,9 @@
 
 .projectDescription {
     margin: 10px 0;
-    color: #333;
+    color: white; /* updated to white for better readability */
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 .modal {
@@ -90,36 +87,67 @@
 }
 
 .modalContent {
-    background-color: white;  
+    background-image: linear-gradient(to bottom right, #007BFF, #e5e5e5);
     padding: 30px;
     border-radius: 15px;
     width: 70%;
     max-width: 600px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    color: #333;
-    font-size: 1.1em;
+    color: #fff;
+    font-size: 1.2em;
     line-height: 1.5em;
+    position: relative;
 }
 
 .closeModal {
-    display: block;
-    background-color: #ff3333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dc3545;
     color: white;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
+    /* Removed the border-radius to make it square */
+    width: 65px;
+    height: 35px;
     cursor: pointer;
-    margin-top: 20px;
-    text-align: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     transition: background-color 0.3s;
+    font-size: 1rem; /* Adjusted font size for better fit */
 }
 
 .closeModal:hover {
-    background-color: #ff0000;
+    background-color: #b22234;
 }
 
 .modalContent ul, .modalContent ol {
     list-style-type: none;
     padding-left: 0;
     margin-left: 1.5em;
+}
+
+.modalContent h4 {
+    margin-top: 20px;
+}
+
+.modalContent ul li {
+    position: relative;
+}
+
+.modalContent ul li:before {
+    content: "•";
+    position: absolute;
+    left: -1.5em;
+    color: #007BFF;
+}
+
+.modalContent a.demoBtn {
+    margin-top: 20px;
+    display: block;
+}
+
+.modalContent a.demoBtn:hover {
+    background-color: #238437;
+    color: #ffffff;
 }
